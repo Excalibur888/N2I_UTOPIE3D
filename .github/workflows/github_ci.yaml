@@ -33,5 +33,5 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           tags: |
-            ghcr.io/ayrozdzn/n2i_aedi:${{ github.sha }}
-            ghcr.io/ayrozdzn/n2i_aedi:latest
+            ghcr.io/ayrozdzn/n2i_utopie3d:${{ github.sha }}
+            ghcr.io/ayrozdzn/n2i_utopie3d:latest
