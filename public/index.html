@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon">
+    <title>Visualisateur STL</title>
+</head>
+<body>
+<img src="./assets/logo.jpg" id="logo">
+<section id="file-upload">
+    <label id="drop-zone" for="input-file">Cliquez ou faites glisser-déposer un fichier STL ici pour le visualiser
+        <input id="input-file" name="stl_file" type="file" accept="model/stl">
+    </label>
+</section>
+<section id="render" style="opacity: 0">
+    <div id="file-render"></div>
+</section>
+<section id="info-popup" style="opacity: 0">
+    <h3>Infos</h3>
+    <p><strong>Hauteur :</strong> <span id="height-field"></span> mm</p>
+    <p><strong>Largeur : </strong> <span id="width-field"></span> mm</p>
+    <p><strong>Profondeur :</strong> <span id="depth-field"></span> mm</p>
+    <p>&nbsp</p>
+    <p><strong>Volume :</strong> <span id="volume-field"></span> mm³</p>
+
+</section>
+<section id="controls-popup" style="opacity: 0">
+    <h3>Contrôles</h3>
+    <p><strong>Clic + mouvement sourie :</strong> Pivoter le modèle</p>
+    <p><strong>Ctrl + défilement :</strong> Zoom/Dézoom</p>
+    <p><strong>Ctrl + Clic + mouvement sourie :</strong> Déplacer le modèle</p>
+    <label for="color-picker"><strong>Couleur du modèle :</strong></label>
+    <input type="color" id="color-picker" value="#606060">
+    <label for="light-picker"><strong>Couleur de l'éclairage :</strong></label>
+    <input type="color" id="light-picker" value="#ffffff">
+</section>
+<script src="/bundle.js" type="module"></script>
+</body>
+</html>

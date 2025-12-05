@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: sans-serif;
+}
+
+h3 {
+    font-size: 1vw;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: .8vw;
+    margin: 0.2vw;
+}
+
+br {
+    line-height: .8vh;
+}
+
+#logo {
+    height: 20vh;
+    width: auto;
+
+    position: absolute;
+
+    top : 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#drop-zone {
+    height: 50vh;
+    width: 80vw;
+
+    position: absolute;
+    display: flex;
+
+    top : 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+
+    border: 2px rgb(13, 101, 131) solid;
+
+    border-radius: 20px;
+
+    z-index: 2;
+}
+
+#drop-zone.hovered {
+    border: 2px rgb(13, 101, 131) dotted;
+}
+
+#input-file {
+    display: none;
+}
+
+#render, #file-render {
+    height: 100vh;
+    width: 100vw;
+
+    z-index: 1;
+}
+
+#info-popup {
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+
+    font-size: .8vw;
+
+    z-index: 3;
+}
+#controls-popup {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+
+    z-index: 3;
+}
